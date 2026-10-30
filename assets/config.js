@@ -2,8 +2,8 @@
 // repository). Until productID and planID are set, the Buy buttons say "Buying opens soon".
 window.VMBOSS_CONFIG = {
   freemius: {
-    productID: "", // the product's Settings › API & Keys
-    planID: "", // the product's Plans page
+    productID: "43534", // the product's Settings › API & Keys
+    planID: "76534", // the product's Plans page
   },
   // The license server (Server/license-worker in the app's repository).
   licenseServer: "https://license.vm-boss.com",

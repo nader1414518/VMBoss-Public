@@ -1,4 +1,4 @@
-// The license page: Freemius's checkout sends buyers here with a signed record of their order
+// The license page: Freemius's checkout sends buyers here with their order
 // in the address, and the license server answers it with their key. A payment can take a few
 // seconds to appear at Freemius, so "not found" is tried again.
 (function () {
@@ -12,7 +12,7 @@
     status.innerHTML = `<span class="error">${message}</span> If this keeps happening, email ${support} with your receipt and we'll send your key.`;
   }
 
-  if (!new URLSearchParams(order).has("signature")) {
+  if (!new URLSearchParams(order).has("payment_id")) {
     status.innerHTML = `Open this page from the link after buying VM Boss Pro. Lost your key? Email ${support} with your receipt.`;
     return;
   }
