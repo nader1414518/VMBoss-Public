@@ -1,10 +1,9 @@
-// Fill these in once Paddle has approved the website (see docs/RELEASING.md in the app's
-// repository). Until clientToken and priceID are set, the Buy buttons say "Buying opens soon".
+// Fill these in once VM Boss Pro exists in Freemius (see docs/RELEASING.md in the app's
+// repository). Until productID and planID are set, the Buy buttons say "Buying opens soon".
 window.VMBOSS_CONFIG = {
-  paddle: {
-    environment: "sandbox", // "production" once you sell for real
-    clientToken: "", // Paddle › Developer tools › Authentication › Client-side tokens (test_… or live_…)
-    priceID: "", // VM Boss Pro's price (pri_…)
+  freemius: {
+    productID: "", // the product's Settings › API & Keys
+    planID: "", // the product's Plans page
   },
   // The license server (Server/license-worker in the app's repository).
   licenseServer: "https://license.vm-boss.com",

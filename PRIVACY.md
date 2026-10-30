@@ -41,9 +41,9 @@ under their own privacy policies.
 In the Mac App Store edition, VM Boss Pro is bought from Apple, under Apple's privacy
 policy; VM Boss only asks the App Store whether this Apple Account owns Pro.
 
-For the direct download, Pro is bought on VM Boss's website through Paddle, our reseller,
-under Paddle's privacy policy. After you pay, the website's license page asks VM Boss's
-license server for your key: the server gets your name and email address from Paddle to
+For the direct download, Pro is bought on VM Boss's website through Freemius, our reseller,
+under Freemius's privacy policy. After you pay, the website's license page asks VM Boss's
+license server for your key: the server gets your name and email address from Freemius to
 put in the key, and keeps nothing. The app checks the key on your Mac, without contacting
 any server.
 

@@ -1,9 +1,9 @@
-// The license page: asks the license server for the key of the order in the address
-// (?transaction=txn_…), waiting while Paddle finishes taking the payment.
+// The license page: Freemius's checkout sends buyers here with a signed record of their order
+// in the address, and the license server answers it with their key. A payment can take a few
+// seconds to appear at Freemius, so "not found" is tried again.
 (function () {
   const config = window.VMBOSS_CONFIG;
-  const params = new URLSearchParams(location.search);
-  const transaction = params.get("transaction") || params.get("transaction_id") || params.get("_ptxn") || "";
+  const order = location.search;
   const status = document.getElementById("status");
   const result = document.getElementById("result");
   const support = `<a href="mailto:${config.supportEmail}">${config.supportEmail}</a>`;
@@ -12,20 +12,19 @@
     status.innerHTML = `<span class="error">${message}</span> If this keeps happening, email ${support} with your receipt and we'll send your key.`;
   }
 
-  if (!transaction) {
+  if (!new URLSearchParams(order).has("signature")) {
     status.innerHTML = `Open this page from the link after buying VM Boss Pro. Lost your key? Email ${support} with your receipt.`;
     return;
   }
-  if (!config.licenseServer) return fail("Keys can’t be fetched here yet.");
 
   let attempts = 0;
   async function fetchKey() {
     attempts += 1;
     try {
-      const response = await fetch(`${config.licenseServer}/license?transaction=${encodeURIComponent(transaction)}`);
+      const response = await fetch(`${config.licenseServer}/license${order}`);
       const body = await response.json();
-      if (response.status === 409 && attempts < 20) {
-        status.textContent = "Waiting for Paddle to confirm your payment…";
+      if ((response.status === 404 || response.status === 502) && attempts < 20) {
+        status.textContent = "Confirming your payment…";
         return setTimeout(fetchKey, 3000);
       }
       if (!response.ok) return fail(body.error || "Your key couldn’t be fetched.");
