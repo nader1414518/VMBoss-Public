@@ -6,7 +6,7 @@ window.VMBOSS_CONFIG = {
     clientToken: "", // Paddle › Developer tools › Authentication › Client-side tokens (test_… or live_…)
     priceID: "", // VM Boss Pro's price (pri_…)
   },
-  // The license server's address (https://vmboss-license.<account>.workers.dev).
-  licenseServer: "",
-  supportEmail: "nader19113118@gmail.com",
+  // The license server (Server/license-worker in the app's repository).
+  licenseServer: "https://license.vm-boss.com",
+  supportEmail: "support@vm-boss.com",
 };

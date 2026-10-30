@@ -4,7 +4,7 @@ Run Windows 11, Linux and Android side by side with your Mac, and keep your iPho
 simulators in the same library. Pick a system and VM Boss downloads it from its maker and
 gets it running. There's nothing else to install.
 
-**Website:** https://nader1414518.github.io/VMBoss-Public/
+**Website:** https://vm-boss.com
 
 ![VM Boss running Windows 11](Screenshots/01-windows.png)
 
@@ -41,7 +41,7 @@ Linux virtual machines are free. VM Boss Pro adds:
 - The `vmctl` command-line tool
 
 Every Pro feature is free to try for 14 days: choose **VM Boss › VM Boss Pro…** in the app.
-Pro is a one-time purchase on [the website](https://nader1414518.github.io/VMBoss-Public/#pro);
+Pro is a one-time purchase on [the website](https://vm-boss.com/#pro);
 right after paying, you get a license key that activates it.
 
 Windows isn't included: it downloads free from Microsoft, and you activate it with your own
@@ -49,7 +49,7 @@ license.
 
 ## Support
 
-Email nader19113118@gmail.com, or [open an issue](https://github.com/nader1414518/VMBoss-Public/issues/new/choose)
+Email support@vm-boss.com, or [open an issue](https://github.com/nader1414518/VMBoss-Public/issues/new/choose)
 for bugs and ideas.
 
 ## Privacy

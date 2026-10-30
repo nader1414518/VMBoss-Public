@@ -52,5 +52,5 @@ Support folder, and your keychain).
 
 ## Contact
 
-Questions: email nader19113118@gmail.com, or open an issue at
+Questions: email support@vm-boss.com, or open an issue at
 <https://github.com/nader1414518/VMBoss-Public/issues>.
