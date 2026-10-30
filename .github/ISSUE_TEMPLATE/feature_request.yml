@@ -1,0 +1,10 @@
+name: Idea or request
+description: A system you'd like to see, or something VM Boss could do better
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
