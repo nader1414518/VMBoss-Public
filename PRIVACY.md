@@ -38,12 +38,19 @@ under their own privacy policies.
 
 ## Purchases
 
-VM Boss Pro is bought from Apple in the Mac App Store edition, under Apple's privacy
-policy; VM Boss only asks the App Store whether this Apple Account owns Pro. The direct
-download's license key is checked on your Mac, without contacting any server, and it's
-bought on the seller's checkout page in your browser. The free trial's start date is kept
-on your Mac (`License.json` in VM Boss's Application Support folder, and your keychain).
+In the Mac App Store edition, VM Boss Pro is bought from Apple, under Apple's privacy
+policy; VM Boss only asks the App Store whether this Apple Account owns Pro.
+
+For the direct download, Pro is bought on VM Boss's website through Paddle, our reseller,
+under Paddle's privacy policy. After you pay, the website's license page asks VM Boss's
+license server for your key: the server gets your name and email address from Paddle to
+put in the key, and keeps nothing. The app checks the key on your Mac, without contacting
+any server.
+
+The free trial's start date is kept on your Mac (`License.json` in VM Boss's Application
+Support folder, and your keychain).
 
 ## Contact
 
-Questions: open an issue at <https://github.com/nader1414518/VMBoss-Public/issues>.
+Questions: email nader19113118@gmail.com, or open an issue at
+<https://github.com/nader1414518/VMBoss-Public/issues>.
