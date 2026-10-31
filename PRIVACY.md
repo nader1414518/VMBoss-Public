@@ -47,8 +47,10 @@ license server for your key: the server gets your name and email address from Fr
 put in the key, and keeps nothing. The app checks the key on your Mac, without contacting
 any server.
 
-The free trial's start date is kept on your Mac (`License.json` in VM Boss's Application
-Support folder, and your keychain).
+The direct download keeps the free trial's dates on your Mac: in `License.json` in VM Boss's
+Application Support folder, your keychain and `/Users/Shared/VM Boss`, which every account
+on the Mac can read. The App Store edition gets the trial's start from the App Store and
+keeps the latest time it ran in its preferences.
 
 ## Contact
 
